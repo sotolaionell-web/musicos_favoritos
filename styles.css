@@ -166,3 +166,25 @@ body {
 }
 
 .footer-link:hover { color: var(--accent); }
+
+.reveal {
+    opacity: 0; transform: translateY(28px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 768px) {
+    .container { padding: 0 24px; }
+    .artist-card { grid-template-columns: 1fr; gap: 28px; justify-items: center; text-align: center; }
+    .artist-img-wrapper { width: 200px; }
+    .artist-album { display: block; }
+    .footer-inner { flex-direction: column; gap: 12px; }
+}
+
+@media (max-width: 480px) {
+    .nav { gap: 18px; }
+    .artist-card { padding: 40px 0; }
+    .artist-img-wrapper { width: 160px; }
+}
