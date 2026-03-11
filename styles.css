@@ -1,0 +1,11 @@
+:root {
+    --bg: #1a1714;
+    --bg-card: #231f1b;
+    --border: rgba(212, 160, 83, 0.1);
+    --text: #f0ebe4;
+    --text-muted: #9a8e7f;
+    --accent: #d4a053;
+    --accent-secondary: #c44536;
+    --font-display: 'DM Serif Display', Georgia, serif;
+    --font-body: 'Karla', system-ui, sans-serif;
+}
